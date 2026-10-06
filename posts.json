@@ -1,0 +1,170 @@
+[
+    {
+        "id": 1,
+        "category": "Machine Learning",
+        "title": "The Anatomy of a Production ML Pipeline",
+        "excerpt": "From raw datasets to monitored inference, discover how reliable machine learning systems are actually constructed.",
+        "readTime": 11,
+        "date": "October 06, 2026",
+        "tags": [
+            "MLOps",
+            "Machine Learning",
+            "Deployment"
+        ],
+        "content": "A machine learning model is only one component of a production system. The real engineering challenge begins when a model leaves a notebook and becomes responsible for real decisions.\n\nA production pipeline normally includes data ingestion, validation, feature engineering, training, evaluation, deployment and monitoring.\n\nData validation protects the model from unexpected schema changes. Feature pipelines make training and inference consistent. Evaluation determines whether the model is useful rather than simply accurate.\n\nOnce deployed, monitoring becomes essential. Distribution drift, latency, errors and prediction quality should continuously be observed.\n\nThe strongest ML systems therefore combine statistics, software engineering and product thinking."
+    },
+    {
+        "id": 2,
+        "category": "Data Engineering",
+        "title": "From Raw Data to Reliable Intelligence",
+        "excerpt": "Why clean pipelines matter more than flashy dashboards and how modern data teams build trustworthy information systems.",
+        "readTime": 8,
+        "date": "October 04, 2026",
+        "tags": [
+            "ETL",
+            "Python",
+            "Analytics"
+        ],
+        "content": "Data science begins long before a model is trained. If the underlying data is incomplete, inconsistent or poorly documented, even the most sophisticated model can produce misleading results.\n\nModern data engineering focuses on creating reliable pipelines that transform raw events into structured information.\n\nA strong pipeline includes ingestion, validation, transformation, testing and observability.\n\nThe objective is not simply moving data from one system to another. The objective is creating a trustworthy foundation on which analysts, scientists and decision makers can build."
+    },
+    {
+        "id": 3,
+        "category": "Statistics",
+        "title": "Visual Thinking with Statistics",
+        "excerpt": "Learn how distributions, uncertainty and visualization can reveal patterns that averages alone hide.",
+        "readTime": 6,
+        "date": "October 01, 2026",
+        "tags": [
+            "Statistics",
+            "Visualization",
+            "R"
+        ],
+        "content": "Statistics gives us a language for reasoning about uncertainty.\n\nA single average can hide enormous variation. Visualizations such as distributions, box plots and confidence intervals allow us to see the structure behind the number.\n\nGood statistical thinking begins by asking what generated the data, what assumptions are reasonable and which uncertainties remain.\n\nThe goal is not to make charts look impressive. The goal is to make the underlying evidence easier to understand."
+    },
+    {
+        "id": 4,
+        "category": "AI Engineering",
+        "title": "Building Trustworthy AI Products",
+        "excerpt": "Accuracy is only one dimension of an intelligent product. Explore evaluation, reliability, explainability and human feedback.",
+        "readTime": 9,
+        "date": "September 27, 2026",
+        "tags": [
+            "AI",
+            "Evaluation",
+            "Product"
+        ],
+        "content": "Building an AI product requires more than selecting a powerful model.\n\nA trustworthy system needs measurable evaluation criteria, clear failure modes and appropriate human oversight.\n\nTeams should evaluate not only average performance but also difficult edge cases. Monitoring should continue after launch because real-world inputs evolve over time.\n\nThe best AI products are engineered around user needs rather than around model capabilities alone."
+    },
+    {
+        "id": 5,
+        "category": "SQL",
+        "title": "SQL Patterns Every Analyst Should Know",
+        "excerpt": "A practical collection of analytical SQL patterns for transforming, comparing and understanding real datasets.",
+        "readTime": 7,
+        "date": "September 24, 2026",
+        "tags": [
+            "SQL",
+            "Analytics",
+            "Data"
+        ],
+        "content": "SQL remains one of the most important tools in the modern data stack.\n\nWindow functions, common table expressions, conditional aggregation and carefully designed joins allow analysts to answer complex questions without unnecessarily moving data into another environment.\n\nThe most valuable SQL skill is not memorizing syntax. It is learning how to translate a business question into a precise data transformation."
+    },
+    {
+        "id": 6,
+        "category": "Statistics",
+        "title": "Experimentation Without the Hype",
+        "excerpt": "A practical framework for designing experiments that produce useful evidence rather than misleading conclusions.",
+        "readTime": 10,
+        "date": "September 20, 2026",
+        "tags": [
+            "A/B Testing",
+            "Statistics",
+            "Growth"
+        ],
+        "content": "Experimentation is powerful because it can help separate correlation from causation.\n\nBut an experiment is only as good as its design. Teams need clear hypotheses, meaningful metrics, appropriate sample sizes and predefined decision criteria.\n\nStatistical significance should not be treated as the same thing as practical significance. A tiny improvement can be statistically detectable while having almost no business value.\n\nGood experimentation connects statistical reasoning with product judgment."
+    },
+    {
+        "id": 7,
+        "category": "Data Visualization",
+        "title": "Designing Dashboards That Think",
+        "excerpt": "A dashboard should reduce cognitive load, not increase it. Learn principles for building analytical interfaces people can actually use.",
+        "readTime": 8,
+        "date": "September 17, 2026",
+        "tags": [
+            "Dashboards",
+            "UX",
+            "Visualization"
+        ],
+        "content": "A useful dashboard answers questions quickly.\n\nVisual hierarchy, consistent scales, appropriate chart selection and carefully chosen metrics allow users to recognize important signals immediately.\n\nThe best dashboard is not the one with the most charts. It is the one that helps someone make a better decision with less effort."
+    },
+    {
+        "id": 8,
+        "category": "Machine Learning",
+        "title": "Why Model Monitoring Matters",
+        "excerpt": "A model can be accurate today and unreliable tomorrow. Learn how monitoring protects production ML systems.",
+        "readTime": 7,
+        "date": "September 12, 2026",
+        "tags": [
+            "Monitoring",
+            "Drift",
+            "MLOps"
+        ],
+        "content": "Machine learning systems operate in environments that change.\n\nInput distributions can shift, user behavior can evolve and upstream data pipelines can break.\n\nMonitoring helps teams identify these changes before they become major failures.\n\nUseful signals include data drift, prediction distributions, latency, error rates and business outcomes."
+    },
+    {
+        "id": 9,
+        "category": "AI Engineering",
+        "title": "The Architecture of Intelligent Applications",
+        "excerpt": "Explore the layers that connect models, retrieval, APIs, interfaces and users in modern AI applications.",
+        "readTime": 12,
+        "date": "September 08, 2026",
+        "tags": [
+            "AI",
+            "Architecture",
+            "APIs"
+        ],
+        "content": "Modern intelligent applications are systems rather than isolated models.\n\nA typical architecture may contain a user interface, application layer, retrieval system, model gateway, evaluation layer and observability infrastructure.\n\nThinking in systems helps engineers design applications that remain useful when models change."
+    },
+    {
+        "id": 10,
+        "category": "Data Engineering",
+        "title": "Building Data Systems That Scale",
+        "excerpt": "Understand the principles behind reliable data systems that remain maintainable as datasets and teams grow.",
+        "readTime": 9,
+        "date": "September 03, 2026",
+        "tags": [
+            "Data",
+            "Architecture",
+            "Pipelines"
+        ],
+        "content": "Scalable data systems require more than powerful hardware.\n\nThey require good architecture, clear ownership, testing, observability and predictable interfaces between systems.\n\nAs organizations grow, the cost of poorly designed data infrastructure grows with them."
+    },
+    {
+        "id": 11,
+        "category": "SQL",
+        "title": "Thinking in Data Before Writing SQL",
+        "excerpt": "The strongest analysts define the analytical problem before touching the query editor.",
+        "readTime": 6,
+        "date": "August 29, 2026",
+        "tags": [
+            "SQL",
+            "Analytics",
+            "Reasoning"
+        ],
+        "content": "Writing SQL becomes significantly easier when the analytical question has been defined precisely.\n\nBefore writing a query, identify the grain of the data, the dimensions required, the metric being calculated and the time period involved.\n\nThis simple discipline prevents many analytical errors."
+    },
+    {
+        "id": 12,
+        "category": "Statistics",
+        "title": "Understanding Uncertainty",
+        "excerpt": "Why confident decisions require understanding what your data cannot tell you.",
+        "readTime": 8,
+        "date": "August 25, 2026",
+        "tags": [
+            "Statistics",
+            "Probability",
+            "Decision Science"
+        ],
+        "content": "Uncertainty is not a weakness in data science. It is a property of the world we are trying to understand.\n\nConfidence intervals, probability distributions and sensitivity analysis provide ways to communicate uncertainty.\n\nStrong data scientists do not hide uncertainty. They make it visible enough for people to make better decisions."
+    }
+]
