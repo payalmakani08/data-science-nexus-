@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="DS/NEXUS — A futuristic data science intelligence blog.">
+
+    <title>DS/NEXUS | Data Science Intelligence</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     LOADING SCREEN
+========================================================= -->
+
+<div id="loader">
+    <div class="loader-core">
+        <div class="loader-ring"></div>
+        <div class="loader-text">DS/NEXUS</div>
+        <small>INITIALIZING INTELLIGENCE...</small>
+    </div>
+</div>
+
+
+<!-- =========================================================
+     BACKGROUND
+========================================================= -->
+
+<canvas id="neuralCanvas"></canvas>
+
+<div class="background-grid"></div>
+
+<div class="cursor-glow"></div>
+
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<nav class="navbar navbar-expand-lg fixed-top nexus-nav">
+
+    <div class="container">
+
+        <a class="navbar-brand nexus-logo" href="#home">
+            <span class="logo-bracket">[</span>
+            DS<span>/</span>NEXUS
+            <span class="logo-bracket">]</span>
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav">
+
+            <i class="bi bi-list"></i>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+
+            <ul class="navbar-nav mx-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#insights">Insights</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#lab">Data Lab</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#analytics">Analytics</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+            </ul>
+
+            <div class="nav-actions">
+
+                <button
+                    id="themeBtn"
+                    class="icon-btn"
+                    title="Toggle theme">
+
+                    <i class="bi bi-moon-stars"></i>
+
+                </button>
+
+                <a href="#newsletter" class="btn nexus-btn">
+                    Join Signal
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section id="home" class="hero-section">
+
+    <div class="container">
+
+        <div class="row align-items-center min-vh-100">
+
+            <div class="col-lg-7">
+
+                <div class="status-pill reveal">
+
+                    <span class="status-dot"></span>
+
+                    SYSTEM ONLINE
+
+                    <span class="status-divider"></span>
+
+                    DATA INTELLIGENCE PLATFORM
+
+                </div>
+
+                <h1 class="hero-title reveal">
+
+                    Think in
+                    <span class="gradient-text">patterns.</span>
+
+                    <br>
+
+                    Build with
+                    <span class="outline-text">evidence.</span>
+
+                </h1>
+
+                <p class="hero-description reveal">
+
+                    DS/NEXUS is a futuristic data science publication
+                    exploring machine learning, artificial intelligence,
+                    statistics, analytics, engineering and the systems
+                    behind intelligent products.
+
+                </p>
+
+                <div class="hero-buttons reveal">
+
+                    <a href="#insights" class="btn nexus-btn btn-lg">
+                        Explore Intelligence
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+                    <a href="#lab" class="btn glass-btn btn-lg">
+                        Open Data Lab
+                        <i class="bi bi-terminal"></i>
+                    </a>
+
+                </div>
+
+                <div class="hero-metrics reveal">
+
+                    <div>
+                        <strong id="heroArticles">12</strong>
+                        <span>ARTICLES</span>
+                    </div>
+
+                    <div>
+                        <strong id="heroCategories">6</strong>
+                        <span>DOMAINS</span>
+                    </div>
+
+                    <div>
+                        <strong>99.9%</strong>
+                        <span>CURIOUS</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO VISUAL -->
+
+            <div class="col-lg-5">
+
+                <div class="orbital-system reveal">
+
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+                    <div class="orbit orbit-three"></div>
+
+                    <div class="core-node">
+
+                        <div class="core-inner">
+                            <i class="bi bi-cpu"></i>
+                        </div>
+
+                        <span>MODEL</span>
+
+                    </div>
+
+                    <div class="floating-node node-a">
+                        <small>ACCURACY</small>
+                        <strong>97.8%</strong>
+                    </div>
+
+                    <div class="floating-node node-b">
+                        <small>FEATURES</small>
+                        <strong>128</strong>
+                    </div>
+
+                    <div class="floating-node node-c">
+                        <small>LATENCY</small>
+                        <strong>24ms</strong>
+                    </div>
+
+                    <div class="floating-node node-d">
+                        <small>STATUS</small>
+                        <strong>ONLINE</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     INSIGHTS
+========================================================= -->
+
+<section id="insights" class="section-space">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <div>
+
+                <span class="eyebrow">
+                    <i class="bi bi-braces"></i>
+                    KNOWLEDGE STREAM
+                </span>
+
+                <h2>
+                    Intelligence
+                    <span>decoded.</span>
+                </h2>
+
+            </div>
+
+            <p>
+                Curated thinking for people who build with data.
+            </p>
+
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <div class="search-panel reveal">
+
+            <div class="search-box">
+
+                <i class="bi bi-search"></i>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search machine learning, SQL, AI, statistics...">
+
+                <kbd>CTRL K</kbd>
+
+            </div>
+
+        </div>
+
+
+        <!-- FILTERS -->
+
+        <div id="categoryFilters" class="category-filters reveal">
+
+            <button class="filter-btn active" data-category="All">
+                All
+            </button>
+
+        </div>
+
+
+        <!-- POSTS -->
+
+        <div id="postsGrid" class="row g-4 mt-3">
+
+            <!-- JavaScript loads posts -->
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     DATA LAB
+========================================================= -->
+
+<section id="lab" class="section-space lab-section">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <div>
+
+                <span class="eyebrow">
+                    <i class="bi bi-activity"></i>
+                    EXPERIMENTAL ENVIRONMENT
+                </span>
+
+                <h2>
+                    Data
+                    <span>Lab.</span>
+                </h2>
+
+            </div>
+
+            <p>
+                Interact with models, probabilities and live metrics.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <!-- MODEL MONITOR -->
+
+            <div class="col-lg-8">
+
+                <div class="lab-card reveal">
+
+                    <div class="card-top">
+
+                        <div>
+
+                            <span class="mini-label">
+                                MODEL MONITOR
+                            </span>
+
+                            <h3>
+                                Production inference signal
+                            </h3>
+
+                        </div>
+
+                        <span class="live-label">
+                            <span></span>
+                            LIVE
+                        </span>
+
+                    </div>
+
+                    <div class="chart-container">
+
+                        <svg
+                            id="modelChart"
+                            viewBox="0 0 900 300"
+                            preserveAspectRatio="none">
+
+                            <defs>
+
+                                <linearGradient
+                                    id="chartGradient"
+                                    x1="0"
+                                    y1="0"
+                                    x2="0"
+                                    y2="1">
+
+                                    <stop
+                                        offset="0%"
+                                        stop-opacity=".35"/>
+
+                                    <stop
+                                        offset="100%"
+                                        stop-opacity="0"/>
+
+                                </linearGradient>
+
+                            </defs>
+
+                            <path
+                                id="chartArea"
+                                class="chart-area">
+                            </path>
+
+                            <path
+                                id="chartLine"
+                                class="chart-line">
+                            </path>
+
+                        </svg>
+
+                    </div>
+
+                    <div class="chart-stats">
+
+                        <div>
+                            <span>ACCURACY</span>
+                            <strong>97.82%</strong>
+                        </div>
+
+                        <div>
+                            <span>DRIFT</span>
+                            <strong>0.013</strong>
+                        </div>
+
+                        <div>
+                            <span>LATENCY</span>
+                            <strong>24ms</strong>
+                        </div>
+
+                        <div>
+                            <span>REQUESTS</span>
+                            <strong id="requestCounter">84,291</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROBABILITY -->
+
+            <div class="col-lg-4">
+
+                <div class="lab-card probability-card reveal">
+
+                    <span class="mini-label">
+                        PROBABILITY ENGINE
+                    </span>
+
+                    <h3>
+                        Classification
+                    </h3>
+
+                    <p>
+                        Adjust the signal and observe the model confidence.
+                    </p>
+
+                    <div class="probability-ring">
+
+                        <div class="ring-progress" id="ringProgress">
+
+                            <div>
+                                <strong id="probabilityValue">
+                                    72%
+                                </strong>
+
+                                <span>CONFIDENCE</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <label class="range-label">
+
+                        Signal strength
+
+                        <span id="signalValue">
+                            72
+                        </span>
+
+                    </label>
+
+                    <input
+                        id="signalSlider"
+                        class="form-range"
+                        type="range"
+                        min="1"
+                        max="100"
+                        value="72">
+
+                    <div class="prediction-box">
+
+                        <span>PREDICTION</span>
+
+                        <strong id="prediction">
+                            HIGH SIGNAL
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ANALYTICS
+========================================================= -->
+
+<section id="analytics" class="section-space">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <div>
+
+                <span class="eyebrow">
+                    <i class="bi bi-bar-chart-line"></i>
+                    LOCAL ANALYTICS
+                </span>
+
+                <h2>
+                    Your
+                    <span>workspace.</span>
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-md-3">
+
+                <div class="metric-card reveal">
+
+                    <i class="bi bi-eye"></i>
+
+                    <span>VISITS</span>
+
+                    <strong id="statVisits">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="metric-card reveal">
+
+                    <i class="bi bi-heart"></i>
+
+                    <span>LIKES</span>
+
+                    <strong id="statLikes">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="metric-card reveal">
+
+                    <i class="bi bi-bookmark"></i>
+
+                    <span>BOOKMARKS</span>
+
+                    <strong id="statBookmarks">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="metric-card reveal">
+
+                    <i class="bi bi-chat"></i>
+
+                    <span>COMMENTS</span>
+
+                    <strong id="statComments">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section id="about" class="section-space">
+
+    <div class="container">
+
+        <div class="about-terminal reveal">
+
+            <div class="terminal-header">
+
+                <div class="terminal-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <span>
+                    nexus.py
+                </span>
+
+            </div>
+
+            <div class="terminal-body">
+
+<pre><span class="purple">class</span> <span class="cyan">DataScientist</span>:
+
+    <span class="purple">def</span> <span class="green">think</span>(self, problem):
+
+        data = collect(problem)
+
+        signal = clean(data)
+
+        features = engineer(signal)
+
+        model = train(features)
+
+        result = evaluate(model)
+
+        <span class="purple">return</span> result</pre>
+
+                <div class="terminal-output">
+
+                    <span class="terminal-prompt">
+                        >
+                    </span>
+
+                    <span>
+                        Intelligence is not about having more data.
+                        It's about extracting better signals.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     NEWSLETTER
+========================================================= -->
+
+<section id="newsletter" class="section-space">
+
+    <div class="container">
+
+        <div class="newsletter-card reveal">
+
+            <div>
+
+                <span class="eyebrow">
+                    JOIN THE SIGNAL
+                </span>
+
+                <h2>
+                    Stay ahead of the
+                    <span>curve.</span>
+                </h2>
+
+                <p>
+                    Get the latest data science insights delivered
+                    directly to your inbox.
+                </p>
+
+            </div>
+
+            <form id="newsletterForm">
+
+                <div class="newsletter-input">
+
+                    <i class="bi bi-envelope"></i>
+
+                    <input
+                        id="emailInput"
+                        type="email"
+                        placeholder="you@example.com"
+                        required>
+
+                    <button type="submit">
+                        Subscribe
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+
+                </div>
+
+                <small id="newsletterMessage"></small>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-main">
+
+            <div>
+
+                <div class="nexus-logo footer-logo">
+                    <span>[</span>
+                    DS/NEXUS
+                    <span>]</span>
+                </div>
+
+                <p>
+                    Data science for curious minds.
+                </p>
+
+            </div>
+
+            <div class="social-links">
+
+                <a href="#" aria-label="GitHub">
+                    <i class="bi bi-github"></i>
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+
+                <a href="#" aria-label="Twitter">
+                    <i class="bi bi-twitter-x"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 DS/NEXUS
+            </span>
+
+            <span>
+                BUILT WITH DATA • LOGIC • CURIOSITY
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     ARTICLE MODAL
+========================================================= -->
+
+<div
+    class="modal fade"
+    id="articleModal"
+    tabindex="-1">
+
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+
+        <div class="modal-content article-modal">
+
+            <div class="modal-header">
+
+                <div>
+
+                    <span id="modalCategory"
+                          class="modal-category">
+                    </span>
+
+                    <h2 id="modalTitle">
+                    </h2>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <div class="article-meta">
+
+                    <span id="modalReadTime"></span>
+
+                    <span id="modalDate"></span>
+
+                </div>
+
+                <div id="modalTags"
+                     class="modal-tags">
+                </div>
+
+                <p id="modalContent"
+                   class="article-content">
+                </p>
+
+                <div class="article-actions">
+
+                    <button
+                        id="modalLike"
+                        class="action-btn">
+
+                        <i class="bi bi-heart"></i>
+                        Like
+
+                    </button>
+
+                    <button
+                        id="modalBookmark"
+                        class="action-btn">
+
+                        <i class="bi bi-bookmark"></i>
+                        Bookmark
+
+                    </button>
+
+                </div>
+
+                <hr>
+
+                <h4>
+                    Leave a thought
+                </h4>
+
+                <form id="commentForm">
+
+                    <div class="row g-3">
+
+                        <div class="col-md-4">
+
+                            <input
+                                id="commentName"
+                                class="form-control nexus-input"
+                                placeholder="Your name"
+                                required>
+
+                        </div>
+
+                        <div class="col-md-8">
+
+                            <input
+                                id="commentText"
+                                class="form-control nexus-input"
+                                placeholder="Your comment"
+                                required>
+
+                        </div>
+
+                    </div>
+
+                    <button class="btn nexus-btn mt-3">
+                        Post comment
+                    </button>
+
+                </form>
+
+                <div id="commentsList"
+                     class="comments-list">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- TOAST -->
+
+<div
+    class="toast-container position-fixed bottom-0 end-0 p-4">
+
+    <div
+        id="toast"
+        class="toast nexus-toast">
+
+        <div class="toast-body">
+            <i class="bi bi-check-circle"></i>
+            <span id="toastMessage">
+                Done
+            </span>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Bootstrap -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<script src="app.js"></script>
+
+</body>
+</html>
