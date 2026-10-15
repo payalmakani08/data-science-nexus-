@@ -723,3 +723,212 @@ a {
         text-align: left !important;
     }
    }
+
+/* =================================
+   DS/NEXUS - COLORFUL REDESIGN
+================================= */
+
+/* Soft colorful page background */
+body {
+    background:
+        radial-gradient(ellipse at top left,
+            #f0e7ff 0%, transparent 35%),
+        radial-gradient(ellipse at top right,
+            #ffe5f3 0%, transparent 35%),
+        linear-gradient(180deg, #fbfaff, #f1f6ff, #fff5fb);
+    color: #292442;
+}
+
+/* Colorful hero section */
+.hero-section {
+    background: linear-gradient(
+        125deg,
+        #5134b7,
+        #8255e8 40%,
+        #4388f5 72%,
+        #ed65b5
+    );
+}
+
+/* Introduction boxes */
+.intro-item {
+    border: 1px solid #e9ddff;
+    border-radius: 22px;
+    background: linear-gradient(145deg, #ffffff, #f4edff);
+    box-shadow: 0 10px 28px rgba(95, 64, 160, 0.10);
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.intro-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 32px rgba(95, 64, 160, 0.16);
+}
+
+/* Colorful topic section */
+.topics-section {
+    background: linear-gradient(
+        135deg,
+        #eee5ff,
+        #e9f2ff 48%,
+        #ffeaf5
+    );
+}
+
+/* Topic cards */
+.topic-card {
+    border: 1px solid rgba(255, 255, 255, 0.95);
+    border-radius: 23px;
+    box-shadow: 0 10px 25px rgba(65, 48, 120, 0.09);
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.topic-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 17px 35px rgba(65, 48, 120, 0.16);
+}
+
+.topic-purple {
+    background: linear-gradient(145deg, #ffffff, #dfd3ff);
+}
+
+.topic-pink {
+    background: linear-gradient(145deg, #ffffff, #ffd9ee);
+}
+
+.topic-blue {
+    background: linear-gradient(145deg, #ffffff, #d7e8ff);
+}
+
+.topic-orange {
+    background: linear-gradient(145deg, #ffffff, #ffe3c7);
+}
+
+/* Article section */
+.articles-section {
+    background: linear-gradient(
+        180deg,
+        #fffaff,
+        #f1f5ff 55%,
+        #fff4fa
+    );
+}
+
+/* Search and filter area */
+.search-box .form-control,
+.form-select {
+    border: 1px solid #ded4fa;
+    border-radius: 13px;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #9568ef;
+    box-shadow: 0 0 0 4px rgba(149, 104, 239, 0.13);
+}
+
+/* Article cards */
+.post-card {
+    border: 1px solid #e9e0fa;
+    border-radius: 22px;
+    box-shadow: 0 9px 26px rgba(70, 49, 125, 0.08);
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 38px rgba(70, 49, 125, 0.15);
+}
+
+.post-cover {
+    min-height: 145px;
+}
+
+.post-content {
+    background: linear-gradient(180deg, #ffffff, #fcfaff);
+}
+
+.post-category {
+    border-radius: 20px;
+    background: linear-gradient(120deg, #eee5ff, #ffe7f5);
+    color: #7044ca;
+}
+
+/* About section */
+.about-section {
+    background: linear-gradient(
+        135deg,
+        #e9e4ff,
+        #e6f2ff,
+        #ffe7f4
+    );
+}
+
+.about-box {
+    border: 1px solid rgba(255, 255, 255, 0.95);
+    border-radius: 27px;
+    background: linear-gradient(
+        130deg,
+        rgba(255, 255, 255, 0.97),
+        #f4edff,
+        #fff0f8
+    );
+    box-shadow: 0 15px 40px rgba(75, 52, 130, 0.10);
+}
+
+/* Keep the hero decoration simple—no graphs */
+.chart-line,
+.chart-bars,
+.art-icon,
+.floating-tag {
+    display: none !important;
+}
+
+.chart-area::after {
+    content: "DATA  •  IDEAS  •  DISCOVERY";
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Buttons */
+.nav-button {
+    background: linear-gradient(120deg, #7654e8, #ed65b5);
+}
+
+.nav-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 18px rgba(118, 84, 232, 0.22);
+}
+
+/* Mobile-friendly spacing */
+@media (max-width: 576px) {
+    .intro-item,
+    .topic-card,
+    .post-card {
+        border-radius: 18px;
+    }
+
+    .hero-section {
+        padding: 48px 0;
+    }
+
+    .about-box {
+        padding: 25px 20px;
+    }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+    }
+}
+
