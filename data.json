@@ -1,0 +1,40 @@
+{
+    "topics": [
+        {
+            "title": "Python Programming",
+            "description": "Learn Python basics, variables, loops, functions and how to use Python for data analysis.",
+            "image": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=600&q=80",
+            "link": "https://www.w3schools.com/python/"
+        },
+        {
+            "title": "Data Analysis",
+            "description": "Understand how to clean, organize and analyze data to find useful information.",
+            "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80",
+            "link": "https://www.kaggle.com/"
+        },
+        {
+            "title": "Machine Learning",
+            "description": "Explore how computers learn patterns from data and make predictions.",
+            "image": "https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=600&q=80",
+            "link": "https://www.ibm.com/topics/machine-learning"
+        },
+        {
+            "title": "Statistics",
+            "description": "Learn about mean, median, probability and other important statistical concepts.",
+            "image": "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=600&q=80",
+            "link": "https://www.khanacademy.org/math/statistics-probability"
+        },
+        {
+            "title": "Data Visualization",
+            "description": "Use charts and graphs to present data in a simple and understandable way.",
+            "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80",
+            "link": "https://www.tableau.com/learn"
+        },
+        {
+            "title": "Real World Data",
+            "description": "Practice working with datasets and explore how data science is used in daily life.",
+            "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80",
+            "link": "https://www.kaggle.com/datasets"
+        }
+    ]
+}
